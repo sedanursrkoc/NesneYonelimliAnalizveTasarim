@@ -15,8 +15,15 @@ public class SogutucuUygulamasi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       //Observer o = new Observer();
-       //o.update("uygulamamiz güncellendi...");
+        Kullanici1 k1 = new Kullanici1();
+        Kullanici2 k2 = new Kullanici2();
+
+        Publisher p = new Publisher();
+
+        p.attach(k1);
+        p.attach(k2);
+       // p.notify("uygulamamiz güncellendi...");
+        
        Sogutucu basla = new Sogutucu();
     }
     

@@ -11,14 +11,11 @@ import java.util.*;
  *
  * @author Hp
  */
-public class Observer implements IObserver  {
+public class Kullanici1 implements IObserver  {
     @Override
     public void update(String mesaj){
-        ArrayList<String> gecici =  new ArrayList<String>();
-        gecici = VeritabaniIslemleri.getInstance().KullaniciNoDondur();
         
-        for (int i = 0; i < gecici.size(); i++) {
-            System.out.println(gecici.get(i) + " nolu kullanicimiz " + mesaj);
-        }
+        System.out.println("1 nolu kullanicimiz " + mesaj);
+        
     }
 }
