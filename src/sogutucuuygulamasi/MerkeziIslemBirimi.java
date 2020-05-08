@@ -27,11 +27,11 @@ public class MerkeziIslemBirimi {
             System.out.println(e);
         }
         
-        if(durum.equals("Ac")){
+        if(durum.equals("Ac")){ //Soğutucu zaten açık mı
             eyleyici.SogutucuAc();
             acik = true;
         }
-        else {
+        else { //Soğutucu zaten açık değil
             eyleyici.SogutucuKapat();
             acik = false;
         }

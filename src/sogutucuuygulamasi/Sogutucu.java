@@ -21,13 +21,14 @@ public class Sogutucu {
         String kullaniciAdi;
         String sifre;
         boolean giris = false;
-        do{
+        do{ //Kullanıcı bilgileri doğrulanana kadar kullanıcı adı ve şifre istenir
             Scanner reader = new Scanner(System.in);
             System.out.print("Kullanici Adi: ");
             kullaniciAdi = reader.next();
             System.out.print("Sifre: ");
             sifre = reader.next();
-            if (VeritabaniIslemleri.getInstance().KullaniciDogrula(kullaniciAdi, sifre)) {
+            //Kullanıcı doğrulaması yapılırsa kullanıcı ağ arayüzü kullanıcıya menüyü gösterir
+            if (VeritabaniIslemleri.getInstance().KullaniciDogrula(kullaniciAdi, sifre)) { 
                 AgArayuzu arayuz = new AgArayuzu();
                 giris = true;
             }

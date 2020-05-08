@@ -30,13 +30,13 @@ public class AgArayuzu {
        
         switch(secim){ //Menüden seçilen işleme göre gerekli işlemlerin gerçekleştirilmesi  
             case 1:
-                if(merkeziIslemBirimi.SogutucuAcikMi()){
+                if(merkeziIslemBirimi.SogutucuAcikMi()){ //Soğutucu zaten açık mi diye kontrol ediliyor
                     System.out.println("Sogutucu zaten acik...\n");
                 }
                 else merkeziIslemBirimi.EyleyiciCalistir("Ac");
             break;
             case 2:
-                if(merkeziIslemBirimi.SogutucuKapaliMi()){
+                if(merkeziIslemBirimi.SogutucuKapaliMi()){ //Soğutucu zaten kapalı mı diye kontrol ediliyor
                     System.out.println("Sogutucu zaten kapali...\n");
                 }
                 else merkeziIslemBirimi.EyleyiciCalistir("Kapat");         

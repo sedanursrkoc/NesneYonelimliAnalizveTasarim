@@ -94,6 +94,7 @@ public class VeritabaniIslemleri {
         } catch (Exception e) {
             System.out.println(e);
         }
+        //Veritabanındaki veriler ile kullanıcıdan alınan veriler karşılaştırılarak kullanıcı doğrulama işlemi yapılıyor
         for (int i = 0; i < kullaniciadlari.size(); i++) {
             if ((kullaniciadlari.get(i).equals(kullaniciAdi) && kullanicisifreleri.get(i).equals(sifre)) ) {
                 System.out.println("Kullanici dogrulandi...\n");
